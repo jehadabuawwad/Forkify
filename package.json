@@ -1,0 +1,32 @@
+{
+  "name": "forkify",
+  "version": "0.0.1",
+  "description": "A cooking applications shows the recipe for any dish you want, searching for a dish with its name makes you able to see ingredients and how you can cook it.",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jehadabuawwad/Forkify.git"
+  },
+  "keywords": [
+    "cooking"
+  ],
+  "author": "Jehad Abu Awwad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jehadabuawwad/Forkify/issues"
+  },
+  "homepage": "https://github.com/jehadabuawwad/Forkify#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "sass": "^1.52.1"
+  },
+  "dependencies": {
+    "core-js": "^3.22.8",
+    "regenerator-runtime": "^0.13.9"
+  }
+}
