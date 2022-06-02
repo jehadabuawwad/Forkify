@@ -34,6 +34,20 @@ You can use one of these accouts for testing:
 
 ---
 
+## Software requirments
+
+### Flow charts
+
+![flowchart-1](./documentation//flowcharts/forkify-flowchart-part-1.png)
+![flowchart-2](./documentation//flowcharts/forkify-flowchart-part-2.png)
+![flowchart-3](./documentation//flowcharts/forkify-flowchart-part-3.png)
+
+### Architecture
+
+![flowchart-3](./documentation//architecture//forkify-architecture-recipe-loading.png)
+
+---
+
 ## Change Log
 
 - **0.0.1** : Application initialization
