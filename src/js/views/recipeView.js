@@ -13,6 +13,15 @@ class RecipeView extends View {
     ["hashchange", "load"].forEach((ev) => addEventListener(ev, handler));
   }
 
+  addHandelerUpdateServings(handler) {
+    this._perentElement.addEventListener("click", function (e) {
+      const btn = e.target.closest(".btn--update--servings");
+      if (!btn) return;
+      const updateTo = +btn.dataset.updateTo;
+      if (updateTo > 0) handler(updateTo);
+    });
+  }
+
   _generateMarkup() {
     return `
     <figure class="recipe__fig">
@@ -30,7 +39,7 @@ class RecipeView extends View {
             <use href="${icons}#icon-clock"></use>
         </svg>
         <span class="recipe__info-data recipe__info-data--minutes">${
-          this._data.cooking_time ? this._data.cooking_time : "30"
+          this._data.cookingTime
         }</span>
         <span class="recipe__info-text">minutes</span>
         </div>
@@ -42,19 +51,22 @@ class RecipeView extends View {
           this._data.servings
         }</span>
         <span class="recipe__info-text">servings</span>
-
-        <div class="recipe__info-buttons">
-            <button class="btn--tiny btn--increase-servings">
-            <svg>
-                <use href="${icons}#icon-minus-circle"></use>
-            </svg>
-            </button>
-            <button class="btn--tiny btn--increase-servings">
-            <svg>
-                <use href="${icons}#icon-plus-circle"></use>
-            </svg>
-            </button>
-        </div>
+            <div class="recipe__info-buttons">
+              <button class="btn--tiny btn--update--servings" data-update-to="${
+                this._data.servings - 1
+              }">
+                <svg>
+                  <use href="${icons}#icon-minus-circle"></use>
+                </svg>
+              </button>
+              <button class="btn--tiny btn--update--servings" data-update-to="${
+                this._data.servings + 1
+              }">
+                <svg>
+                  <use href="${icons}#icon-plus-circle"></use>
+                </svg>
+              </button>
+          </div>
         </div>
 
         <div class="recipe__user-generated">
