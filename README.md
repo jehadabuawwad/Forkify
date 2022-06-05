@@ -16,7 +16,19 @@ VS Code
 - **Release** 0.0.1 :
 
   - Release Title : Application initialization
-  - Release Description
+  - Release Description : base code initialized
+
+  - **Release** 0.0.2 :
+
+  - Release Title : Application build
+  - Release Description : building the application with feature of:
+
+    - bookmarks
+    - error and success messages
+    - pagination
+    - search
+    - update recipe servings
+    - upload new recipe
 
 ---
 
