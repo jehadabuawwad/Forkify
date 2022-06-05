@@ -1,6 +1,5 @@
 class SearchView {
   _perentElement = document.querySelector(".search");
-  _data;
   _errorMessage = "";
   _successMessage = "";
 
