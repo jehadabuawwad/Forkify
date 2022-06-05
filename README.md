@@ -63,6 +63,7 @@ You can use one of these accouts for testing:
 ## Change Log
 
 - **0.0.1** : Application initialization
+- **0.0.2** : Application build
 
 ---
 
