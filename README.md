@@ -18,7 +18,7 @@ VS Code
   - Release Title : Application initialization
   - Release Description : base code initialized
 
-  - **Release** 0.0.2 :
+- **Release** 0.0.2 :
 
   - Release Title : Application build
   - Release Description : building the application with feature of:
